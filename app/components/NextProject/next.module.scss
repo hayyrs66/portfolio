@@ -1,0 +1,38 @@
+.footer {
+  width: 100%;
+  height: 100%;
+
+  .title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 4rem 4rem 4rem;
+    gap: 1rem;
+
+    a {
+      font-size: clamp(1rem, 1vw, 2rem);
+      font-weight: 400;
+      position: relative;
+      line-height: 1.5;
+
+      
+      svg{
+        transition: transform 0.3s cubic-bezier(.3,.2,.2,.8);
+      }
+
+      &:hover{
+        svg{
+            transform: translate(1rem, -1rem); 
+
+        }
+      }
+      
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .footer .title{
+    padding: 0 2rem 4rem 2rem;
+  }
+}

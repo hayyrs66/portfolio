@@ -1,0 +1,115 @@
+.section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 4rem;
+  margin: 12rem 0 12rem 0;
+
+  h1 {
+    font-size: clamp(2rem, 8vw, 9rem);
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    position: relative;
+
+    &::before {
+      content: var(--content);
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 1.5rem;
+      transform: translateY(-1rem);
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    margin-top: 5rem;
+    width: 100%;
+    height: 100%;
+    gap: 4rem;
+
+    aside {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      div {
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #dff2f2;
+        p {
+          padding-bottom: 0.5rem;
+        }
+      }
+
+      div:nth-last-child(2) {
+        border-bottom: none;
+        div {
+          display: flex;
+          gap: 0.5rem;
+        }
+      }
+    }
+
+    main {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      p {
+        max-width: 55ch;
+        text-wrap: balance;
+        font-size: clamp(1rem, 1vw, 2rem);
+        letter-spacing: -0.01rem;
+        font-weight: 300;
+        line-height: 1.1;
+      }
+
+      div {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-bottom: 2rem;
+
+        figure {
+          position: relative;
+          width: 100%;
+          height: 0;
+          padding-bottom: 30%;
+
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .section {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .section .grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .section h1 {
+    &::before {
+      transform: translateY(-2rem);
+    }
+  }
+}

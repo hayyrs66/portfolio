@@ -1,0 +1,33 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: rgb(0,0,0);
+}
+
+h1, h2, h3, h4, h5, p, span, a, li, small{
+    color: #dff2f2;
+    text-decoration: none;
+}
+
+img{
+   user-select: none; 
+   -moz-user-select: none;
+   -webkit-user-drag: none;
+}
+
+::-moz-selection{
+    background-color: #541cfc;
+}
+
+::selection{
+    background-color: #541cfc;
+}
+canvas{
+    display: block;
+}

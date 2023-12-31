@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+  padding: 1rem 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: -0.05rem;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .header{
+    padding: 1rem 2rem;
+  }
+}

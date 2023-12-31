@@ -1,0 +1,29 @@
+.button{
+    width: 150px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 1rem 0;
+    margin-right: 4rem;
+    
+    p{
+        color: #DFF2F2;
+        margin: 0px;
+        text-transform: uppercase;
+        transition: color 0.3s cubic-bezier(.3,.2,.2,.8);
+        cursor: pointer;
+        &:hover{
+            color: #fff;
+        }
+    }
+  
+  }
+
+
+  @media only screen and (max-width: 1024px) {
+    .button{
+        margin-right: 2rem;
+    }
+  }

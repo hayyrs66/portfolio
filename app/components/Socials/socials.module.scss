@@ -1,0 +1,21 @@
+.footer {
+  padding: 1rem 4rem;
+  display: flex;
+  gap: .8rem;
+  
+  a {
+    font-size: 1rem;
+    transition: color 0.3s cubic-bezier(.3,.2,.2,.8);
+
+    
+    &:hover{
+      color: #fff;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px){
+ .footer{
+  padding: 1rem 2rem;
+ } 
+}

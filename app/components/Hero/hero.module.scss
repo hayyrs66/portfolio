@@ -1,0 +1,39 @@
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  padding: 0 2rem;
+
+  .container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    h1 {
+      font-size: clamp(2.5rem, 7vw, 10rem);
+      line-height: 0.4;
+      font-weight: 400;
+      letter-spacing: -2px;
+      mix-blend-mode: difference;
+    }
+    h1:nth-child(2) {
+      margin-left: auto;
+      span {
+        font-size: clamp(1rem, 3vw, 5rem);
+      }
+    }
+  }
+}
