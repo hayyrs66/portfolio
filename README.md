@@ -8,7 +8,7 @@ Explore a curated collection of projects that highlight my skills. From sleek de
 
 ## Tech Stack ⚙️
 
-**Client:** React, Nextjs, SCSS, Framer Motion, Threejs
+**Client:** React, Nextjs, SCSS, Framer Motion, Threejs, GLSL
 
 
 
