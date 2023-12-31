@@ -14,5 +14,5 @@ Explore a curated collection of projects that highlight my skills. From sleek de
 
 ## Screenshots
 
-![App Screenshot](/hero.png)
-![App Screenshot](/contact.png)
+![App Screenshot](/public/hero.png)
+![App Screenshot](/public/contact.png)
