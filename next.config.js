@@ -12,5 +12,4 @@ module.exports = {
   
       return config;
     },
-    reactStrictMode: false,
   };

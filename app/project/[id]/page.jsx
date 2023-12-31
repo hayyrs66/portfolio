@@ -8,7 +8,7 @@ import { NextProject } from "@/app/components";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-export default function page({ params }) {
+export default function Page({ params }) {
   const [isLoading, setIsLoading] = useState(true);
   
   // loading

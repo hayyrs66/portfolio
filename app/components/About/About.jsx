@@ -22,7 +22,7 @@ export default function About() {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  });
 
   return (
     <section className={styles.section} id="about">
@@ -40,7 +40,7 @@ export default function About() {
           </motion.picture>
           <div>
             <p>
-              With a Bachelor's Degree in Computer Science and currently in the
+              With a Bachelor&apos;s Degree in Computer Science and currently in the
               third semester of the Software Engineering program at Rafael
               Landivar University, my journey demonstrates a dedication to both
               structured and self-directed learning. Engaging in hands-on
@@ -52,7 +52,7 @@ export default function About() {
               Inspired by Daniel Mejía, a Software Lead Engineer at Telus
               International, whose influence extends beyond coding principles to
               encompass clean code practices, personal growth, and the pursuit
-              of excellence as a software engineer. From Midudev, I've drawn
+              of excellence as a software engineer. From Midudev, I&apos;ve drawn
               inspiration to maintain consistency in web technologies, adhere to
               best practices, and appreciate the significance of small details
               in the development process.

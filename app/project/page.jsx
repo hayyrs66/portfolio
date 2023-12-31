@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { works } from "../constants";
 
-export default function page() {
+export default function Page() {
   const router = useRouter();
 
   router.replace(
