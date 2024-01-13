@@ -64,7 +64,7 @@ export default function Page({ params }) {
                 ))}
               </div>
             </div>
-            <Button />
+            <Button href={project.href} />
           </aside>
           <main>
             <div>
