@@ -6,7 +6,7 @@ export const works = [
     description:
       "Source code for a fully functional fashion e-commerce application. The application includes payment functionality, categorized sections, product filtering, and a CMS for content editing.",
     href: "https://github.com/hayyrs66/e-commerce",
-    src: ["/hero.png", "/contact.png"],
+    src: ["/media/hero.png", "/media/hero2.png"],
     stack: ["Nextjs ", "React ", "TypeScript", "PayloadCMS", "Stripe"],
     number: "01",
   },
