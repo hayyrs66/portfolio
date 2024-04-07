@@ -40,8 +40,8 @@ export const works = [
       "This is a Java console application for currency conversion. It allows users to convert between different currencies using real-time exchange rates obtained from the ExchangeRate-API.",
     href: "https://github.com/hayyrs66/currency-converter",
     src: ["/media/currency.png", "/media/currency-2.png"],
-    stack: ["Astro ", "TailwindCSS"],
-    number: "03",
+    stack: ["Java"],
+    number: "04",
   },
 ];
 
