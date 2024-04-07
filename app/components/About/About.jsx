@@ -15,7 +15,7 @@ export default function About() {
 
   const handleScroll = () => {
     requestAnimationFrame(() => {
-      controls.start({ y: (window.scrollY - 500) * 0.05});
+      controls.start({ y: (window.scrollY - 500) * 0.03});
     });
   };
 
