@@ -21,6 +21,7 @@ export default function NextProject({ params }) {
     <footer className={styles.footer}>
       <div className={styles.title}>
         <Link href={`/project/[id]`} as={`/project/${nextProject.title.toLowerCase().replace(/\s+/g, '')}`}>
+          
           NEXT PROJECT
           <MdArrowOutward color="#dff2f2" />
         </Link>
