@@ -34,7 +34,7 @@ export default function Hero() {
         </h1>
       </div>
 
-      <div ref={containerRef} className={styles.container} />
+      {/* <div ref={containerRef} className={styles.container} /> */}
     </section>
   );
 }

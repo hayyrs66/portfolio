@@ -5,6 +5,7 @@ import styles from "./about.module.scss";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import { CgExternal } from "react-icons/cg";
 
 export default function About() {
   const controls = useAnimation();
@@ -15,7 +16,7 @@ export default function About() {
 
   const handleScroll = () => {
     requestAnimationFrame(() => {
-      controls.start({ y: (window.scrollY - 500) * 0.03});
+      controls.start({ y: (window.scrollY - 500) * 0.03 });
     });
   };
 
@@ -29,9 +30,9 @@ export default function About() {
       <div className={styles.about}>
         <h2>About</h2>
         <div className={styles.grid}>
-          <motion.picture animate={controls} initial={{ y: -50}}>
+          <motion.picture animate={controls} initial={{ y: -50 }}>
             <Image
-              src={"/media/ricardo.jpg"}
+              src={"/media/ricardo_3.JPG"}
               fill
               alt="Ricardo Guevara"
               title="Ricardo Guevara"
@@ -40,23 +41,13 @@ export default function About() {
           </motion.picture>
           <div>
             <p>
-              With a Bachelor&apos;s Degree in Computer Science and currently in the
-              third semester of the Software Engineering program at Rafael
-              Landivar University, my journey demonstrates a dedication to both
-              structured and self-directed learning. Engaging in hands-on
-              projects, I consistently expand my understanding of the field,
-              laying the groundwork for my future goals.
+              With a high school diploma in Computer Science and currently in my second year of the Software Engineering program at <a href="https://principal.url.edu.gt/" target="_blank">Rafael Landivar University <CgExternal /></a>, I've embarked on a journey that highlights my dedication to both structured and self-directed learning. Engaging in hands-on projects, I continuously broaden my understanding of the field, laying a strong foundation for my future career in software engineering.
             </p>
             <br />
             <p>
-              Inspired by Daniel Mejía, a Software Lead Engineer at Telus
-              International, whose influence extends beyond coding principles to
-              encompass clean code practices, personal growth, and the pursuit
-              of excellence as a software engineer. From Midudev, I&apos;ve drawn
-              inspiration to maintain consistency in web technologies, adhere to
-              best practices, and appreciate the significance of small details
-              in the development process.
+              My approach to learning and development is deeply influenced by professionals like Daniel Meja, a Software Lead Engineer at Telus International. His guidance has shaped my understanding of clean code practices, personal growth, and the pursuit of excellence in software engineering. Additionally, the insights I've gained from Midudev have reinforced the importance of consistency in web technologies, adherence to best practices, and attention to detail in the development process.
             </p>
+            <br />
           </div>
         </div>
       </div>

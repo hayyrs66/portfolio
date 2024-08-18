@@ -75,12 +75,13 @@
         height: 0;
         padding-bottom: 60%;
         overflow: hidden;
-        transition: all 0.1s cubic-bezier(.3,.2,.2,.8);
+        transition: all 0.1s cubic-bezier(.3, .2, .2, .8);
+
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          object-position: top;
+          object-position: calc(30% - 1px) calc(30% - 1px);
           filter: opacity(0.8);
           border-radius: 3px;
         }
@@ -93,10 +94,17 @@
         p {
           max-width: 55ch;
           text-wrap: balance;
-          font-size: 1.2rem;
+          font-size: 1.225rem;
           letter-spacing: -0.01rem;
           font-weight: 300;
           line-height: 1.1;
+          // link styles
+          a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.225rem;
+            color: #0070f3;
+          }
         }
       }
     }
@@ -104,26 +112,27 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .section .about{
+  .section .about {
     padding: 2rem 2rem 10rem 2rem;
   }
 }
 
 @media only screen and (max-width: 1440px) {
   .section .about .grid div p {
-    font-size: clamp(0.875rem, 0.9vw, 1.2rem);
+    font-size: clamp(0.875rem, 1.1vw, 1.2rem);
   }
 }
 
 @media only screen and (max-width: 940px) {
-  .section .about .grid{
+  .section .about .grid {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .section .about .grid div{
+  .section .about .grid div {
     margin-top: 4rem;
   }
-  .section .about .grid picture{
+
+  .section .about .grid picture {
     margin-bottom: 2rem;
     width: 100%;
   }

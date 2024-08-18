@@ -6,7 +6,7 @@ export default function Footer(props) {
   return (
     <footer className={styles.footer}>
       <div className={styles.title}>
-        <a href="mailto:correo.guevara@proton.me">
+        <a href="mailto:rayrtsx@proton.me">
           {props.text}
           <MdArrowOutward color="#dff2f2" />
         </a>
