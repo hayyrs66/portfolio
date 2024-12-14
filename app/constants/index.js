@@ -1,6 +1,17 @@
 export const works = [
   {
-    title: "Fashion",
+    title: "Fashion Ecommerce",
+    category: "Web Development",
+    year: "2024",
+    description:
+      "Source code for a fully functional fashion e-commerce application. The application includes payment functionality, categorized sections and product filtering.",
+    href: "https://www.distincion.shop/",
+    src: ["/media/fashion-hero.png", "/media/fashion-product.png"],
+    stack: ["Nextjs ", "React ", "JavaScript", "PayloadCMS", "ebipay"],
+    number: "01",
+  },
+   {
+    title: "Variety Ecommerce",
     category: "Web Development",
     year: "2023",
     description:
