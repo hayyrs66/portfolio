@@ -46,7 +46,7 @@ export default function About() {
               <a href="https://principal.url.edu.gt/" target="_blank">
                 Rafael Landivar University <CgExternal />
               </a>
-              I've embarked on a journey that highlights my dedication to both
+              I&apos;ve embarked on a journey that highlights my dedication to both
               structured and self-directed learning. Engaging in hands-on
               projects, I continuously broaden my understanding of the field,
               laying a strong foundation for my future career in software
@@ -58,7 +58,7 @@ export default function About() {
               professionals like Daniel Meja, a Software Lead Engineer at Telus
               International. His guidance has shaped my understanding of clean
               code practices, personal growth, and the pursuit of excellence in
-              software engineering. Additionally, the insights I've gained from
+              software engineering. Additionally, the insights I&apos;ve gained from
               Midudev have reinforced the importance of consistency in web
               technologies, adherence to best practices, and attention to detail
               in the development process.
