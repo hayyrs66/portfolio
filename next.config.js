@@ -1,14 +1,34 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
 
-module.exports = {
-    webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-      // Agrega la regla para manejar archivos GLSL
-      config.module.rules.push({
-        test: /\.(glsl|vs|fs)$/,
-        exclude: /node_modules/,
-        use: ['raw-loader','glslify-loader'],
-      });
-      return config;
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "utfs.io",
+        port: "",
+        pathname: "/f/**",
+      },
+    ],
+  },
+  experimental: {
+    turbo: {
+      rules: {
+        '*.glsl': {
+          loaders: ['raw-loader', 'glslify-loader'],
+          as: '*.js',
+        },
+        '*.vs': {
+          loaders: ['raw-loader', 'glslify-loader'],
+          as: '*.js',
+        },
+        '*.fs': {
+          loaders: ['raw-loader', 'glslify-loader'],
+          as: '*.js',
+        },
+      },
     },
-  };
+  },
+};
+
+module.exports = nextConfig;
