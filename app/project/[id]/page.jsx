@@ -6,30 +6,31 @@ import { works } from "@/app/constants";
 import Image from "next/image";
 import { NextProject } from "@/app/components";
 import { AnimatePresence, motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useState, use } from "react";
 
-export default function Page({ params }) {
+export default function Page(props) {
+  const params = use(props.params);
   const [isLoading, setIsLoading] = useState(true);
-  
+
   // loading
-  
+
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
       window.scrollTo(0, 0);
     }, 1000);
   }, []);
-  
+
   // -- loading
-  
+
   const { id } = params;
-  
+
   const project = works.find((work) => {
     let fixedTitle = work.title.toLowerCase().replace(/\s+/g, "");
     
     return fixedTitle === id;
   });
-  
+
   const words = [`${project.title}`];
   let numberOfProject = project.number;
   let content = {
