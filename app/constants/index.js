@@ -1,7 +1,18 @@
 export const works = [
   {
+    title: "Instagram Media Downloader",
+    category: "Web & Backend",
+    year: "2025",
+    description:
+      "Instatool is an open-source tool for downloading Instagram posts, carousels, and reels. It prioritizes user privacy by being ad-free and tracking-free. Built with modern technologies like Astro. Instatool offers a seamless way to save Instagram content efficiently.",
+    href: "https://instatool-snowy.vercel.app/", 
+    src: ["https://utfs.io/f/TZTnyKmT8PHuL6AfIZ5BSiZTluhoE7pGHytwXFCec916xJsO", "https://utfs.io/f/TZTnyKmT8PHujC6ztYl7k9LxdY32QaNerP4oRViWBCnIt5yp"],
+    stack: ["Astro", "TailwindCSS"],
+    number: "01",
+  },
+  {
     title: "Fashion Ecommerce",
-    category: "Web Development",
+    category: "Web & Backend",
     year: "2024",
     description:
       "Source code for a fully functional fashion e-commerce application. The application includes payment functionality, categorized sections and product filtering.",
@@ -12,7 +23,7 @@ export const works = [
   },
    {
     title: "Variety Ecommerce",
-    category: "Web Development",
+    category: "Web & Backend",
     year: "2023",
     description:
       "Source code for a fully functional fashion e-commerce application. The application includes payment functionality, categorized sections, product filtering, and a CMS for content editing.",
@@ -23,7 +34,7 @@ export const works = [
   },
   {
     title: "Footprint",
-    category: "Web Development",
+    category: "Web & Backend",
     year: "2024",
     description:
       "Web application to calculate the ecological footprint of Google services using the Drive API v3, employing conversion factors to raise awareness about a healthier and renewable digital life.",
@@ -34,7 +45,7 @@ export const works = [
   },
   {
     title: "Encryptor",
-    category: "Web Development",
+    category: "Web",
     year: "2024",
     description:
       "This is a simple web built with Astro that allows users to encrypt and decrypt text. Users can input text, choose to encrypt or decrypt it, and copy the resulting text to the clipboard.",
