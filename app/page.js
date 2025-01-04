@@ -24,9 +24,9 @@ export default function Home() {
 
   return (
     <main>
-      {/* <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait">
         {isLoading && <Preloader words={words} />}
-      </AnimatePresence> */}
+      </AnimatePresence>
       <Hero/>
       <About />
       <Work />
