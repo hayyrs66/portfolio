@@ -1,5 +1,4 @@
 /** @type {import('next').NextConfig} */
-
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -15,15 +14,15 @@ const nextConfig = {
     turbo: {
       rules: {
         '*.glsl': {
-          loaders: ['raw-loader', 'glslify-loader'],
+          loaders: ['glslify-loader'],
           as: '*.js',
         },
         '*.vs': {
-          loaders: ['raw-loader', 'glslify-loader'],
+          loaders: ['glslify-loader'],
           as: '*.js',
         },
         '*.fs': {
-          loaders: ['raw-loader', 'glslify-loader'],
+          loaders: ['glslify-loader'],
           as: '*.js',
         },
       },
