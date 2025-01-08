@@ -55,7 +55,7 @@ export default function About() {
             <br />
             <p>
               My approach to learning and development is deeply influenced by
-              professionals like Daniel Meja, a Software Lead Engineer at Telus
+              professionals like Daniel Mejía, a Software Lead Engineer at Telus
               International. His guidance has shaped my understanding of clean
               code practices, personal growth, and the pursuit of excellence in
               software engineering. Additionally, the insights I&apos;ve gained from
